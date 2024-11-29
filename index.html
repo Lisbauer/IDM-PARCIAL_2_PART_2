@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Audiowide&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/mediaquerys.css" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./imagenes/favicon.png" />
+
+  <!-- Title -->
+  <title>Arcane Imports</title>
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container d-flex justify-content-between align-items-center position-relative flex-nowrap">
+      <!-- Logo -->
+      <a href="index.html"><img src="./imagenes/arcaneimports.png" alt="Logo"
+          class="img-fluid w-50 w-sm-50 w-lg-15" /></a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" id="offcanvasNavbarLabel">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#productos">Figuras</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#merch-container">Merchandising</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+
+  <main>
+    <!-- carousel -->
+    <div id="carousel-container" class="w-100">
+      <div id="indicadores" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <picture>
+              <source srcset="imagenes/jinxvi-2.png" class="w-100" media="(max-width: 576px)" />
+              <img src="imagenes/jinxvi-2.png" class="w-100" alt="Banner de Jinx y Vi" />
+            </picture>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <source srcset="imagenes/viktor.png" class="w-100" media="(max-width: 576px)" />
+              <img src="imagenes/viktor.png" class="w-100" alt="Banner de Viktor" />
+            </picture>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <source srcset="imagenes/caitlyn.png" class="w-100" media="(max-width: 576px)" />
+              <img src="imagenes/caitlyn.png" class="w-100" alt="Banner de Caitlyn" />
+            </picture>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#indicadores" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#indicadores" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"> </span>
+        </button>
+      </div>
+    </div>
+    <!-- seccion nosotros -->
+    <section id="nosotros">
+      <h1 class="fs-1 fs-sm-3">Arcane Imports: Tu Conexión con Riot Games</h1>
+      <p>
+        En Arcane Imports, somos apasionados del universo de
+        <span id="riotgames">Riot Games</span> y nos dedicamos a traer lo
+        mejor de sus mundos directamente a tus manos. Nos especializamos en la
+        importación de merchandising exclusivo de Arcane, y así mismo de
+        League of Legends, Valorant y otros títulos icónicos que han marcado
+        generaciones de jugadores. Desde figuras coleccionables y prendas
+        únicas hasta accesorios temáticos, seleccionamos cuidadosamente cada
+        producto para garantizar calidad y autenticidad.
+      </p>
+      <p>
+        Nuestro compromiso es llevar la magia de Runaterra, Piltover y Zaun,
+        junto con la adrenalina de Valorant, a cada rincón del país.
+        <em>Si no encontrás el producto que buscás, simplemente ponete en
+          contacto con nosotros y en Arcane Imports nos encargaremos de
+          traerlo especialmente para vos.</em>
+        ¡Hacemos que tu pasión llegue a donde estés!
+      </p>
+    </section>
+    <!-- Acordeon -->
+    <section id="accordion-container" class="d-flex justify-content-center align-items-center">
+      <div class="accordion w-50" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              ¿Por qué elegirnos?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Calidad garantizada: Nos comprometemos a
+              ofrecer productos y servicios de la más alta calidad, siempre
+              buscando la satisfacción de nuestros clientes. Con nosotros,
+              puedes estar seguro de que obtendrás lo mejor.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Compromiso con la innovación
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Siempre a la vanguardia: Nos esforzamos por
+              mantenernos a la vanguardia de las tendencias y la tecnología,
+              garantizando soluciones innovadoras que te ayuden a alcanzar tus
+              objetivos con eficiencia.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Atención personalizada
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Te escuchamos: Valoramos tus necesidades y nos
+              adaptamos a ellas. Ofrecemos atención personalizada para
+              asegurarnos de que obtengas lo que realmente necesitas, con un
+              enfoque único y exclusivo para ti.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- productos -->
+    <section id="productos">
+      <h2 class="fs-1 fs-sm-3">Nuestros productos</h2>
+      <!-- figuras -->
+      <div id="figuras-container" class="d-flex flex-column align-items-center gap-3">
+        <h3 class="title">Figuras</h3>
+        <div class="card-section">
+          <div class="card">
+            <img src="./imagenes/productos/jinxfigura.png" class="card-img-top"
+              alt="Figura de Jinx con campera de Ekko." />
+            <div class="card-body">
+              <h3 class="card-title">Figura de Jinx campeona de Arcane</h3>
+              <p class="card-text">
+                La figura de <strong>Jinx</strong>, campeona de
+                <em>Arcane</em>, a escala <strong>1/7</strong> cuenta con un
+                embalaje exclusivo. Además, está envuelta en un
+                <em>papel desechable</em> del que podras tirar con
+                <strong>sumo cuidado</strong>, como si estuvieses
+                desarrollando los mismísimos <strong>hexportales</strong>, o
+                con la violencia de un <strong>zarpazo de Warwick</strong>.
+              </p>
+              <div class="span-btn-container">
+                <span>$316.790</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./imagenes/productos/jinx2figura.png" class="card-img-top"
+              alt="Figura de Jinx de LOL con cohete" />
+            <div class="card-body">
+              <h3 class="card-title">Figura LOL Jinx PVC Modelo Base LED</h3>
+              <p class="card-text">
+                Hecha de <strong>PVC de alta calidad</strong>, esta figura a
+                escala detallada captura perfectamente la esencia de la
+                campeona. El modelo incluye una
+                <strong>base con luces LED integradas</strong>, que resalta
+                aún más los detalles de la figura y crea un
+                <em>ambiente vibrante y lleno de energía</em>, justo como el
+                estilo de <strong>Jinx</strong>.
+              </p>
+              <div class="span-btn-container">
+                <span>$279.990</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./imagenes/productos/jinx3figura.png" class="card-img-top" alt="Figura luminosa de Jinx LOL" />
+            <div class="card-body">
+              <h3 class="card-title">Figura luminosa de Jinx diorama</h3>
+              <p class="card-text">
+                ¿Por qué conformarse con un <strong>arma</strong> cuando se
+                puede tener <strong>tres en una</strong>? Nuestra
+                <strong>Bala Perdida</strong>, con su
+                <em>icónico aspecto original</em>, disparando
+                <strong>Espinas</strong>, con su <strong>Pium Pium</strong> y
+                <strong>Chispita</strong> en el lateral. Al conectarla con la
+                figura de <strong>Vi</strong> de <em>PureArts</em>, podrás
+                crear un <strong>diorama</strong> de las dos hermanas en
+                acción.
+              </p>
+              <div class="span-btn-container">
+                <span>$419.990</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./imagenes/productos/jinxvifigura.png" class="card-img-top"
+              alt="Figura de Powder y Vi en Arcane Season 1" />
+            <div class="card-body">
+              <h3 class="card-title">Figura Powder y VI Temp. 1</h3>
+              <p class="card-text">
+                Representando su <strong>vínculo inseparable</strong> durante
+                la <strong>primera temporada</strong>, captura con detalle sus
+                <strong>expresiones</strong> y <strong>poses</strong>. La
+                figura está elaborada en
+                <strong>materiales de alta calidad</strong>, con
+                <em>detalles intrincados</em> en las <strong>ropas</strong>,
+                <strong>armas</strong> y
+                <strong>características faciales</strong> que resaltan la
+                <em>esencia de cada hermana</em>.
+              </p>
+              <div class="span-btn-container">
+                <span>$256.870</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./imagenes/productos/warwickfigura.png" class="card-img-top"
+              alt="Figura de Vander / Warwick en Arcane" />
+            <div class="card-body">
+              <h3 class="card-title">Figura de Warwick / Vander Arcane</h3>
+              <p class="card-text">
+                <strong>Vander</strong>, el líder de los
+                <strong>Bando de los Cazadores</strong> y figura paterna para
+                <strong>Powder</strong> y <strong>Vi</strong>, es representado
+                con su <em>carácter noble</em>, mientras que
+                <strong>Warwick</strong>, el <em>monstruo vengativo</em>,
+                muestra su <strong>feroz y brutal transformación</strong> en
+                una figura llena de <em>poder</em> y
+                <em>desgarradora emoción</em>.
+              </p>
+              <div class="span-btn-container">
+                <span>$252.470</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./imagenes/productos/vifigura.png" class="card-img-top" alt="Figura de Vi VS Jinx" />
+            <div class="card-body">
+              <h3 class="card-title">Figura luminosa de VI diorama</h3>
+              <p class="card-text">
+                La <strong>Agente de Piltover</strong> aparece con sus
+                <strong>típicos Guanteletes Atlas</strong>, lista para hacer
+                <strong>justicia a puñetazos</strong>. Al conectar la figura
+                de <strong>Vi</strong> con la figura de
+                <strong>Jinx Luminosa</strong> de <em>PureArts</em>, podrás
+                crear un <strong>diorama</strong> de lo más
+                <em>dinámico</em> de las dos hermanas en acción.
+              </p>
+              <div class="span-btn-container">
+                <span>$419.990</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./imagenes/productos/vi2figura.png" class="card-img-top" alt="Figura de VI LOL" />
+            <div class="card-body">
+              <h3 class="card-title">Figura de VI League of legends</h3>
+              <p class="card-text">
+                No te pierdas esta <strong>divertida figura de Vi</strong>,
+                trabaja para conseguir la
+                <strong>paz en la Grieta del Invocador</strong>. Se encuentra
+                fabricada en <strong>material de PVC</strong>, cuenta con un
+                <strong>tamaño de 20 cm</strong> y se incluye
+                <strong>caja de plástico</strong>.
+              </p>
+              <div class="span-btn-container">
+                <span>$249.990</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./imagenes/productos/silco.png" class="card-img-top" alt="Figura Funko POP Silco Arcane" />
+            <div class="card-body">
+              <h3 class="card-title">Figura Funko POP Silco Arcane</h3>
+              <p class="card-text">
+                Esta figura de <strong>Silco</strong> es una manera perfecta
+                de rendir homenaje al <strong>personaje</strong> que redefinió
+                el <strong>equilibrio de poder en Zaun</strong>. ¡No pierdas
+                la oportunidad de tener al <em>villano más carismático</em> en
+                tu colección!
+              </p>
+              <div class="span-btn-container">
+                <span>$149.990</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- merchandising -->
+      <div id="merch-container" class="d-flex flex-column align-items-center gap-3 mt-5">
+        <h3 class="title">Merchandising</h3>
+        <div class="card-section">
+          <div class="card">
+            <img src="./imagenes/productos/remera-cait-vi.png" class="card-img-top"
+              alt="Camiseta de Caitlyn y VI de Arcane" />
+            <div class="card-body">
+              <h3 class="card-title">Camiseta Caitlyn y VI Arcane</h3>
+              <p class="card-text">
+                Confeccionada en <strong>algodón de alta calidad</strong>,
+                esta camiseta ofrece <strong>comodidad</strong> y
+                <strong>durabilidad</strong>, perfecta para el
+                <em>uso diario</em> o para lucir en
+                <em>eventos temáticos</em> y <em>maratones de Arcane</em>.
+              </p>
+              <div class="span-btn-container">
+                <span>$85.990</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./imagenes/productos/collar-rosa.png" class="card-img-top" alt="Collar de Rosa azul Arcane" />
+            <div class="card-body">
+              <h3 class="card-title">Collar de Rosa azul Arcane</h3>
+              <p class="card-text">
+                Cuerda de <strong>cuero</strong>, base de
+                <strong>latón recubierta con plata de 40 de ley sin níquel</strong>, con un <em>acabado satinado</em> y
+                <strong>colores personalizados</strong> mediante
+                <em>resina epoxi</em> en la parte delantera y trasera.
+              </p>
+              <div class="span-btn-container">
+                <span>$69.560</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./imagenes/productos/bearbrick.png" class="card-img-top"
+              alt="Imagen de Bearbrick, juguete de Jinx" />
+            <div class="card-body">
+              <h3 class="card-title">BE@RBRICK captura de Jinx Arcane</h3>
+              <p class="card-text">
+                Este producto no está diseñado como <strong>juguete</strong> o
+                producto para <strong>niños</strong>. Este producto es un
+                <strong>artículo de coleccionista</strong> para mayores de
+                <strong>14 años</strong>.
+              </p>
+              <div class="span-btn-container">
+                <span>$179.990</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./imagenes/productos/mochila.png" class="card-img-top"
+              alt="Mochila Tokidoki edicion limitada Arcane" />
+            <div class="card-body">
+              <h3 class="card-title">Mochila Tokidoki edicion limitada</h3>
+              <p class="card-text">
+                Medidas (aproximadas): <strong>39,4 cm de altura</strong> x
+                <strong>29,2 cm de ancho</strong> x
+                <strong>14 cm de profundidad</strong>, material
+                <strong>poliéster</strong>,
+                <strong>cintas ajustables</strong>, etiqueta cosida de
+                <em>tokidoki x ARCANE</em>.
+              </p>
+              <div class="span-btn-container">
+                <span>$256.870</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./imagenes/productos/pines.png" class="card-img-top" alt="Conjunto de pines de Arcane" />
+            <div class="card-body">
+              <h3 class="card-title">Conjunto de pines de Arcane</h3>
+              <p class="card-text">
+                Equípate con el conjunto de pines de Arcane, entre los que
+                encontrarás la
+                <strong>insignia de los agentes de Piltover</strong>, el
+                <strong>blasón de la familia Kiramman</strong> y un
+                <strong>pin de un grafiti de Jinx</strong>.
+              </p>
+              <div class="span-btn-container">
+                <span>$101.370</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./imagenes/productos/heimer.png" class="card-img-top"
+              alt="Muñeco para hombro de Heimerdinger de Arcane" />
+            <div class="card-body">
+              <h3 class="card-title">Muñeco para hombro Heimerdinger</h3>
+              <p class="card-text">
+                Con unos <strong>15 cm de alto</strong> y confeccionado con
+                <strong>algodón de polipropileno</strong>, el muñeco para el
+                hombro de <strong>Heimerdinger de Arcane</strong> cuenta con
+                un <strong>imán</strong> que podés colocar bajo la ropa para
+                que el profesor te guarde las espaldas.
+              </p>
+              <div class="span-btn-container">
+                <span>$65.990</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./imagenes/productos/ekko-campera.png" class="card-img-top"
+              alt="Campera de Ekko Billionaire Boys Club x Arcane" />
+            <div class="card-body">
+              <h3 class="card-title">
+                Campera de Ekko Billionaire Boys Club
+              </h3>
+              <p class="card-text">
+                <strong>100 % algodón</strong>, patrón de diamantes y dólares
+                con los colores de Ekko,
+                <strong>logo oficial de Arcane</strong> y
+                <strong>logo de Billionaire Boys Club bordado</strong>, parche
+                de un cuchillo al rojo vivo y un yelmo bordado en la manga
+                izquierda.
+              </p>
+              <div class="span-btn-container">
+                <span>$349.990</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./imagenes/productos/camiseta-mel.png" class="card-img-top"
+              alt="Camiseta de manga larga de Mel de Arcane" />
+            <div class="card-body">
+              <h3 class="card-title">Camiseta de Mel de Arcane</h3>
+              <p class="card-text">
+                <strong>100 % algodón 20/1 personalizado</strong>, camiseta de
+                <strong>manga larga teñida</strong>, diseños
+                <strong>serigrafiados de Mel en plastisol</strong> en la parte
+                delantera, las mangas y la parte trasera.
+              </p>
+              <div class="span-btn-container">
+                <span>$149.990</span>
+                <a href="./paginas/productos.html" class="btn btn-primary">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- formulario -->
+    <section class="container d-flex flex-column justify-content-center align-items-center text-white mt-5" id="contacto">
+      <h2>Contacto</h2>
+      <p class="text-center text-md-start fs-5">¿Necesitas algún producto en especial? No dudes en contactarnos</p>
+      <form action="#" method="post" class="w-100">
+        <div class="mb-2">
+          <label class="form-label" for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre y apellido" required />
+        </div>
+    
+        <div class="mb-2">
+          <label class="form-label" for="mail">Email</label>
+          <input type="email" id="mail" name="mail" class="form-control" placeholder="Ejemplo: arcaneimports@gmail.com" required />
+        </div>
+    
+        <div class="mb-2">
+          <label class="form-label" for="cel">Teléfono</label>
+          <input type="number" id="cel" name="cel" placeholder="Número telefónico" class="form-control" />
+        </div>
+    
+        <div class="mb-2">
+          <label class="form-label" for="comentario">Comentario</label>
+          <textarea class="form-control" placeholder="¿Necesitas algo en particular?" id="comentario" name="comentario" style="resize: none" rows="4"></textarea>
+        </div>
+    
+        <button type="submit" class="btn w-100">
+          <span>Enviar</span>
+        </button>
+      </form>
+    </section>
+    
+  </main>
+  <footer>
+    <div class="container d-flex flex-column text-white align-items-center">
+      <img src="imagenes/fotografia-alumna.jpg" class="mb-3" alt="fotografia de la alumna" />
+      <ul class="list-unstyled text-center">
+        <li>Bauer Lisa</li>
+        <li>04/05/1996</li>
+        <li>
+          <a href="mailto:lisa.bauer@davinci.edu.ar">lisa.bauer@davinci.edu.ar</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

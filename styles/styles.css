@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Estilos generales */
+body{
+    background-image: url('../imagenes/background-arcane.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Kanit", serif;
+}
+
+h1,h2{
+    color: white;
+    font-family: "Audiowide", serif;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+strong{
+    color: rgb(252, 249, 60);
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(65, 1, 80, 0.584) !important;
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    font-family: "Audiowide", serif;
+    font-size: 1.2rem;
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(255, 0, 204) !important;
+}
+
+/* DROPDOWN estilos */
+.dropdown-item:active{
+    background: rgb(255, 0, 204);
+}
+
+/* Seccion nosotros */
+#nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 100px;
+    gap: 10px;
+}
+
+#nosotros p{
+    color: white;
+    font-size: 1.4rem;
+    width: 60%;
+}
+
+#riotgames{
+    color: red;
+}
+
+/* Acordeon */
+#accordion-container{
+    margin-bottom: 40px;
+}
+
+#accordionExample .accordion-header .accordion-button{
+    background: white;
+    font-size: 1.3rem;
+}
+
+#accordionExample .accordion-item{
+    background: linear-gradient(to bottom, rgba(255, 2, 129, 0.596), rgba(0, 100, 163, 0.7)); 
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Productos */
+#productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Títulos personalizados */
+.title{
+    color: white;
+    letter-spacing: 3px;
+    font-family: "Audiowide", serif;
+}
+
+/* Sección de cards */
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* Cards de productos */
+.card{
+    background: linear-gradient(to bottom, rgba(255, 2, 129, 0.596), rgba(0, 100, 163, 0.7)); 
+    padding: 10px;
+    border: solid 1px rgb(255, 0, 242);
+    position: relative;
+    width: 21rem;
+    height: 45rem;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.span-btn-container{
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+
+.card-body span{
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.btn{
+    width: 80%;
+    background: linear-gradient(to right, rgb(200, 14, 252), rgba(255, 20, 147, 1)); 
+    border: none;
+    color: #fffc00;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.btn:active{
+    background: linear-gradient(to right, rgb(92, 9, 115), rgb(134, 12, 77)); 
+}
+
+/* Formularios */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(255, 2, 129, 0.321), rgba(0, 100, 163, 0.7)); 
+    padding: 10px;
+    border: solid 1px rgb(255, 0, 242);
+    border-radius: 10px;
+    width: 60%;
+    padding: 30px;
+}
+
+.mb-2{
+    width: 100%;
+}
+
+form label{
+    font-size: 1.4rem;
+}
+
+form input{
+    height: 50px;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    font-size: 1.3rem;
+}
+
+/* Footer */
+footer{
+    padding-top: 40px;
+    margin-top: 60px;
+    background: linear-gradient(to bottom, rgba(255, 2, 129, 0.208), rgba(0, 100, 163, 0.255)); 
+    border-top: solid 1px rgb(255, 0, 242);
+}
+
+/* Galería de imágenes */
+.product-img-container {
+    aspect-ratio: 1;
+}
+
+.galeria-imagenes{
+    gap: 0.25rem;
+}
+
+.galeria-imagenes .img-thumbnail{
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    transition: border 0.3s linear;
+}
+
+.galeria-imagenes .img-thumbnail:hover,
+.galeria-imagenes .img-thumbnail:focus,
+.galeria-imagenes .img-thumbnail.active{
+    border: 11px solid rgb(255, 0, 242);
+}
+
+.product-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CODIGO CUPON */
+#code-btn{
+    width: 50%;
+    background: linear-gradient(to right, rgba(200, 14, 252, 0.636), rgba(255, 20, 145, 0.659)); 
+    color: #fffc00;
+    border: none;
+    border-radius: 5px;
+}
+
+#code-btn:active{
+    background: linear-gradient(to right, rgba(200, 14, 252, 0.143), rgba(154, 11, 87, 0.217)); 
+}
+
+/* Listas */
+.list-group, .list-group-item{
+    border: solid 1px rgb(255, 0, 242);
+    color: black;
+}

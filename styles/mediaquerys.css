@@ -1,0 +1,27 @@
+@media (max-width: 991px) {
+    .navbar-expand-lg .offcanvas {
+        background-image: url(../imagenes/jinx-toggler.jpg);
+        background-position: center;
+    }
+    #nosotros p{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+@media (max-width:575px) {
+    #nosotros{
+        margin: 10px 10px;
+    }
+    form{
+        width: 90%;
+    }
+    .card{
+        width: 90%;
+    }
+    .w-50{
+        width: 90% !important;
+    }
+    #accordionExample .accordion-header .accordion-button{
+        font-size: 1rem;
+    }
+}
