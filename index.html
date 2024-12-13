@@ -132,7 +132,7 @@
     </section>
     <!-- Acordeon -->
     <section id="accordion-container" class="d-flex justify-content-center align-items-center">
-      <div class="accordion w-50" id="accordionExample">
+      <div class="accordion w-50 w-md-75 w-sm-100" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -183,6 +183,7 @@
         </div>
       </div>
     </section>
+    
     <!-- productos -->
     <section id="productos">
       <h2 class="fs-1 fs-sm-3">Nuestros productos</h2>
@@ -524,14 +525,20 @@
           <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre y apellido" required />
         </div>
     
-        <div class="mb-2">
-          <label class="form-label" for="mail">Email</label>
-          <input type="email" id="mail" name="mail" class="form-control" placeholder="Ejemplo: arcaneimports@gmail.com" required />
+        <div class="row g-2 mb-2">
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="mail">Email</label>
+            <input type="email" id="mail" name="mail" class="form-control" placeholder="Ejemplo: arcaneimports@gmail.com" required />
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="cel">Teléfono</label>
+            <input type="number" id="cel" name="cel" placeholder="Número telefónico" class="form-control" />
+          </div>
         </div>
     
         <div class="mb-2">
-          <label class="form-label" for="cel">Teléfono</label>
-          <input type="number" id="cel" name="cel" placeholder="Número telefónico" class="form-control" />
+          <label class="form-label" for="cel">¿Cómo nos conociste?</label>
+          <input type="text" id="conociste" name="conociste" placeholder="Contanos!" class="form-control" />
         </div>
     
         <div class="mb-2">
